@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using WebAPI.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services
@@ -5,6 +8,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<WebApiDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("WebAPIConnectionString")));
 
 var app = builder.Build();
 

@@ -20,7 +20,7 @@ public sealed class Logger {
 }
 
 class Singleton {
-    static void Main(){
+    static void MainFunc(){
         var logger1 = Logger.Instance;
         var logger2 = Logger.Instance;
 

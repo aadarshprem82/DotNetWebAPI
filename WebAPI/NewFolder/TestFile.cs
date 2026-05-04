@@ -1,6 +1,6 @@
 using System;
 
-class temp{
+class TestFile{
     static bool isEven(int number){
         return number % 2 == 0;
     }
@@ -16,7 +16,7 @@ class temp{
 
     static int Root(int x) => x * 2;
 
-    static async Task Main(){
+    static async Task MainFunc(){
         
 
         // List <int> numbers = new List<int> {1,2,3,4,5};
