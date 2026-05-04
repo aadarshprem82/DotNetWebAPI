@@ -10,9 +10,9 @@ class TestFile{
         b = 20;
     }
 
-    static async Task<int> GetAsync(){
-        return 10;
-    }
+    // static async Task<int> GetAsync(){
+    //     return 10;
+    // }
 
     static int Root(int x) => x * 2;
 
